@@ -109,7 +109,7 @@ public class ReservaController {
     }
 */
     @DeleteMapping("/{id}")
-    public void deleteStudent(@PathVariable Long id){
+    public void deleteReserva(@PathVariable Long id){
         reservaService.deleteReserva(id);
     }
 
