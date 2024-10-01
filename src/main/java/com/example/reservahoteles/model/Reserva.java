@@ -25,6 +25,7 @@ public class Reserva extends RepresentationModel<Reserva>{
     @Column(name= "nombreCliente")
     private String nombreCliente;
 
+    @NotBlank(message = "No puede ingresar un nombre vacio")
     @Column(name = "habitacion")
     private int habitacion;
 

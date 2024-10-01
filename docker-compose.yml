@@ -1,0 +1,13 @@
+version: '3'
+services:
+  microservicio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - spring.datasource.url=jdbc:oracle:thin:@ejerciciosbbdd2_tp?TNS_ADMIN=/Users/Wallet_EjerciciosBBDD2
+      - spring.datasource.username=EXP3_S8_A
+      - spring.datasource.password=ConexionBD123
+    restart: always
